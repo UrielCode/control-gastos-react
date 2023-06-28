@@ -9,7 +9,12 @@ const DUMMY_EXPENSES = [
     amount: 994,
     date: new Date(2022, 7, 14),
   },
-  { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+  {
+    id: 'e2',
+    title: 'Ropa',
+    amount: 799.49,
+    date: new Date(2021, 2, 12)
+  },
   {
     id: 'e3',
     title: 'Seguro Medico',
@@ -20,6 +25,12 @@ const DUMMY_EXPENSES = [
     id: 'e4',
     title: 'Comida',
     amount: 850,
+    date: new Date(2023, 5, 12),
+  },
+  {
+    id: 'e5',
+    title: 'Escuela',
+    amount: 1650,
     date: new Date(2023, 5, 12),
   },
 ];
@@ -37,7 +48,7 @@ const App = () => {
   return (
     <>
       <h2>Control de gastos</h2>
-      
+
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </>
