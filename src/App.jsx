@@ -31,7 +31,7 @@ const DUMMY_EXPENSES = [
     id: 'e5',
     title: 'Escuela',
     amount: 1650,
-    date: new Date(2023, 5, 12),
+    date: new Date(2023, 6, 22),
   },
 ];
 
